@@ -28,7 +28,6 @@ const screenContainer = document.getElementById('screen-container');
 const screenPreview = document.getElementById('screen-preview');
 const inputAudioVisualizer = document.getElementById('input-audio-visualizer');
 const apiKeyInput = document.getElementById('api-key');
-const apiKeyInput = "AIzaSyClLpEcqwhhkNvQqUBM1seLI1Ox1qVoOs0";
 const voiceSelect = document.getElementById('voice-select');
 const fpsInput = document.getElementById('fps-input');
 const configToggle = document.getElementById('config-toggle');
