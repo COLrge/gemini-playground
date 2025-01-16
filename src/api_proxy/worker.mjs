@@ -4,6 +4,8 @@
 
 import { Buffer } from "node:buffer";
 
+const DEFAULT_API_KEY = "你的API_KEY值";  // 替换成你的 API Key
+
 export default {
   async fetch (request) {
     if (request.method === "OPTIONS") {
@@ -15,7 +17,7 @@ export default {
     };
     try {
       const auth = request.headers.get("Authorization");
-      const apiKey = auth?.split(" ")[1];
+      const apiKey = DEFAULT_API_KEY;
       const assert = (success) => {
         if (!success) {
           throw new HttpError("The specified HTTP method is not allowed for the requested resource", 400);
